@@ -42,10 +42,10 @@ class Triangle {
     
     get perimeter() {
         if (!this.isTriangle()) return "Not a Triangle";
-        return (this.edgeA + this.edgeB + this.edgeC)/2
+        return (this.edgeA + this.edgeB + this.edgeC)
     }
     get area(){
-        const p = this.perimeter
+        const p = this.perimeter / 2
         if (!this.isTriangle()) return "Not a Triangle";
         return Math.sqrt(p * (p - this.edgeA) * (p - this.edgeB) * (p - this.edgeC))
     } 
