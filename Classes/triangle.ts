@@ -17,20 +17,20 @@ class TriangleTs {
     }
 
     get edgeA(): number {
-        const x = this.point1.x - this.point2.x;
-        const y = this.point1.y - this.point2.y;
+        const x: number = this.point1.x - this.point2.x;
+        const y: number = this.point1.y - this.point2.y;
         return Math.sqrt(x * x + y * y);
     }
 
     get edgeB(): number {
-        const x = this.point1.x - this.point3.x;
-        const y = this.point1.y - this.point3.y;
+        const x: number = this.point1.x - this.point3.x;
+        const y: number = this.point1.y - this.point3.y;
         return Math.sqrt(x * x + y * y);
     }
 
     get edgeC(): number {
-        const x = this.point2.x - this.point3.x;
-        const y = this.point2.y - this.point3.y;
+        const x: number = this.point2.x - this.point3.x;
+        const y: number = this.point2.y - this.point3.y;
         return Math.sqrt(x * x + y * y);
     }
 
