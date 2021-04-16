@@ -10,7 +10,7 @@ class PointTs {
 
 class TriangleTs {
     
-    constructor(readonly point1: PointTs, readonly point2: Point, readonly point3: Point){
+    constructor(readonly point1: PointTs, readonly point2: PointTs, readonly point3: PointTs){
         this.point1 = point1
         this.point2 = point2
         this.point3 = point3
